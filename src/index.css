@@ -1,8 +1,53 @@
 body {
   min-height: 100vh;
+    background-image: url(https://i.pinimg.com/736x/df/dd/57/dfdd5723666df34fc6dc627a1ba3aa06.jpg);	
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    min-height: 110vh;
+  
+}
+h1{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3rem;
+	color:rgb(15, 14, 14);
+	margin-top: 20px;
+}
+.header{
+	position: relative;
+	display: flex;
+	justify-content: center;
+} 
+.card-books-item{
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+img{
+	width: 100%;
+	display: block;
+}
+.book-item .cart-img-top {
+	height: 400px;
+	object-fit: cover;
+}
+img:hover, img:active,img:focus {
+	border: 2px solid  white; 
 }
 .books-item {
   height: 100%;
+}
+.card-product-img {
+  height: 300px;
+  object-fit: cover;
 }
 
 footer {
@@ -15,4 +60,15 @@ footer {
   bottom: 0;
   width: 100%;
   
+}
+.nav__item{
+	display: inline-block;
+	font-style: italic;
+	margin: auto;
+    margin-top: 20px;
+ }
+ 
+ .btn.btn-primary{
+	margin-right: 20px;
+	margin-bottom: 5px;
 }
