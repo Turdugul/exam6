@@ -2,15 +2,15 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
-const ProductDetail = ({ state }) => {
+const ProductDetail = ({products}) => {
     const { id } = useParams()
-    const product = state.find((item) => item.id == id)
+    const product = products.find((item) => item.id == id)
     return (
         <div>
             <h1>{product.title}</h1>
             <div className="row">
                 <div className="col-6">
-                    <img className="w-100" src={product.image} alt="" />
+                    <img className="w-100" src={product.img} alt="" />
                 </div>
                 <div className="col-6">
                     <p>
@@ -20,9 +20,9 @@ const ProductDetail = ({ state }) => {
                         <span className="mr-2 text-danger font-weight-bold">
                             Price:{product.price}
                         </span>
-                        <button className="btn btn-primary"></button>
-                    Purchase
-                    <button />
+                        <button className="btn btn-primary"> Buy</button>
+                       
+                   
                     </p>
                 </div>
             </div>
@@ -30,8 +30,8 @@ const ProductDetail = ({ state }) => {
     );
 };
 
-const msp = (state) => {
-    return { state }
+const msp = ({products}) => {
+    return { products }
 }
 
 export default connect(msp)(ProductDetail);

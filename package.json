@@ -17,6 +17,7 @@
     "react-scripts": "4.0.3",
     "read-more-react": "^1.0.10",
     "reduce": "^1.0.2",
+    "redux-form": "^8.3.7",
     "web-vitals": "^1.1.1"
   },
   "scripts": {

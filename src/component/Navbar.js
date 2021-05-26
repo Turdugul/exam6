@@ -1,7 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Search from './Search';
+import {connect} from 'react-redux'
 
-const Navbar = () => {
+const Navbar = ({searchBook}) => {
+    const onSearch = ({search})=> {
+        searchBook(search)
+    }
     return (
         <nav className="navbar navbar-expand navbar-light bg-light">
             <div className="container">
@@ -20,9 +25,21 @@ const Navbar = () => {
                         <NavLink to="/Register" exact className="nav-link">Register</NavLink>
                     </li>
                 </ul>
+                <Search onSubmit={onSearch} />
             </div>
         </nav>
     );
 };
 
-export default Navbar;
+ 
+
+ const msp = ({search}) => {
+    return {search}
+}
+ const searchBook=(search)=>{
+     return {
+         type:"SEARCH",
+         search
+     }
+ }
+export default connect(msp,{searchBook})(Navbar);

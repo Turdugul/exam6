@@ -2,15 +2,16 @@ import React from 'react';
 import {connect} from "react-redux"
 import ProductItem from './ProductItem';
 
-const ProductList = (state) => {
+const ProductList = ({products}) => {
+    console.log(products)
     return (
        
             <div className="container border shadow-sm rounded pb-4">
 
-                <h1>Books</h1>
+                <h1 className="h1-text">Books</h1>
                 <div className="row">
 
-                    {state.map((item) => (
+                    {products.map((item) => (
                         <ProductItem key={item.id} item={item}/>
                     ))}
                 </div>
@@ -20,8 +21,8 @@ const ProductList = (state) => {
     );
 };
 
-const msp = (state) => {
-    return {state}
+const msp = ({products}) => {
+    return {products}
 }
 
 export default  connect(msp)(ProductList);

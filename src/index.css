@@ -1,6 +1,6 @@
 body {
-  min-height: 100vh;
-    background-image: url(https://i.pinimg.com/736x/df/dd/57/dfdd5723666df34fc6dc627a1ba3aa06.jpg);	
+    min-height: 100vh;
+    background-image: url(https://i.pinimg.com/736x/df/dd/57/dfdd5723666df34fc6dc627a1ba3aa06.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,65 +10,105 @@ body {
     margin: 0;
     padding: 0;
     min-height: 110vh;
-  
-}
-h1{
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 3rem;
-	color:rgb(15, 14, 14);
-	margin-top: 20px;
-}
-.header{
-	position: relative;
-	display: flex;
-	justify-content: center;
-} 
-.card-books-item{
-	margin-top: 30px;
-	margin-left: 10px;
-	margin-right: 10px;
-  margin-bottom: 10px;
 }
 
-img{
-	width: 100%;
-	display: block;
+main {
+    min-height: 100vh;
 }
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: rgb(212, 14, 14);
+    margin-top: 20px;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.card-books-item {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    height: min-content;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
 .book-item .cart-img-top {
-	height: 400px;
-	object-fit: cover;
+    height: 400px;
+    object-fit: cover;
 }
-img:hover, img:active,img:focus {
-	border: 2px solid  white; 
+
+img:hover,
+img:active,
+img:focus {
+    border: 2px solid white;
 }
+
 .books-item {
-  height: 100%;
+    height: 100%;
 }
+
 .card-product-img {
-  height: 300px;
-  object-fit: cover;
+    height: 300px;
+    object-fit: cover;
 }
 
 footer {
-  text-align: center;
-  background-color: black;
-  color: white;
-  overflow: auto;
-  padding-top: 1rem;
-  position: absolute, fixed;
-  bottom: 0;
-  width: 100%;
-  
+    text-align: center;
+    background-color: black;
+    color: white;
+    overflow: auto;
+    padding-top: 1rem;
+    position: absolute, fixed;
+    bottom: 0;
+    width: 100%;
 }
-.nav__item{
-	display: inline-block;
-	font-style: italic;
-	margin: auto;
+
+.nav__item {
+    display: inline-block;
+    font-style: italic;
+    margin: auto;
     margin-top: 20px;
- }
- 
- .btn.btn-primary{
-	margin-right: 20px;
-	margin-bottom: 5px;
+}
+
+.btn.btn-primary {
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    color: rgb(180, 8, 51);
+}
+
+.banner {
+    height: 500px;
+    background-color: rgba(245, 210, 246, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.banner-image {
+    background-image: url(https://avatars.mds.yandex.net/get-zen_doc/3362051/pub_5faad94799041f23a4f7e7d6_5fac4f843775242524fdad86/scale_1200);
+}
+
+.banner h1 {
+    position: relative;
+    color: ;
 }
